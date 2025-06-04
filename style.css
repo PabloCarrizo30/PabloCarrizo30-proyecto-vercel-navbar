@@ -1,0 +1,78 @@
+/* fotn */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wg);
+
+:root {
+    /*bg-colors */
+    --secondary: #272d37;
+    --background: #02050e;
+    --primary: #1e50ff;
+
+    /* --text-colors*/
+    --text-gray: #adb9c7;
+    --txt-white: #f3f4f6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*header*/ 
+
+header {
+    background: var(--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    /*para fixear en el top de la pagina*/
+    position: fixed
+    top:0;
+    z-index: 2;
+}
+
+.logo {
+    height: 40%;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: var(--text-gray);
+    font-weight: 600;
+}
+
+.navbar-list li:first-child > a {
+    color: var(--txt-white);
+    font-weight: 700;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    height: 30px;
+    padding: 30px;
+    padding: 5px 19px;
+    margin-right: 1rem;
+    color: var(--txt-white);
+    cursor: pointer;
+}
