@@ -21,26 +21,6 @@
     list-style-type: none;
 }
 
-/*header*/ 
-
-header {
-    background: var(--secondary);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    padding: 0px 30px;
-    /*para fixear en el top de la pagina*/
-    position: fixed
-    top:0;
-    z-index: 2;
-}
-
-.logo {
-    height: 70%;
-}
-
 .navbar,
 .navbar-list {
     display: flex;
